@@ -70,8 +70,8 @@ colorschemes = list(
 )
 
 punctuation = c(
-    paste0("'", strsplit('()[]{},;+-*/^&|!~$@:', '')[[1L]], "'"),
-    strsplit('EQ NE LT LE GT GE NS_GET NS_GET_INT LBB OR2 AND2 LEFT_ASSIGN EQ_ASSIGN EQ_FORMALS EQ_SUB', ' ')[[1L]]
+    paste0("'", strsplit('()[]{},;+-*/^!~$@:', '')[[1L]], "'"),
+    strsplit('EQ NE LT LE GT GE NS_GET NS_GET_INT LBB OR AND OR2 AND2 LEFT_ASSIGN EQ_ASSIGN EQ_FORMALS EQ_SUB', ' ')[[1L]]
 )
 
 keywords = strsplit('BREAK ELSE FOR FUNCTION IF IN NEXT REPEAT WHILE', ' ')[[1L]]
