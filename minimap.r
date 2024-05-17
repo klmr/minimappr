@@ -150,10 +150,10 @@ plot_code_minimap_from_tokens = function (tokens, colorscheme) {
     tokens %>%
         ggplot() +
         aes(x = col1 - 0.1, y = line1, xend = col2 + 0.1, yend = line2, color = token) +
-        geom_segment(size = 1, lineend = 'round') +
+        geom_segment(linewidth = 1, lineend = 'round') +
         scale_x_continuous(expand = expand) +
         scale_y_continuous(trans = 'reverse', expand = expand) +
-        scale_color_manual(values = colorscheme$fg, guide = FALSE) +
+        scale_color_manual(values = colorscheme$fg, guide = 'none') +
         labs(x = '', y = '') +
         theme_void() +
         theme(panel.background = element_rect(fill = colorscheme$bg))
